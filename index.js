@@ -21,12 +21,13 @@ class PortfolioModel {
         "I am a Full Stack Web Developer experienced in engineering end-to-end web applications across modern JavaScript and PHP ecosystems.",
         "At Meijun LLC, I worked on the Terra Education Portal & CMS, developing both frontend interfaces with React.js and robust backend services with Node.js and PostgreSQL.",
         "My experience spans serverless automation with AWS Lambda, enterprise observability through Datadog API and Session Replay, and automated issue tracking with Jira API. Additionally, I manage relational databases—designing and optimizing schemas in PostgreSQL and MySQL—and interface with third-party platforms such as Typeform and Salesforce to align customer records and transaction states.",
+        "Beyond client work, I independently designed, built, and deployed four full-scale web platforms (church management, telemedicine, bus ticketing, and veterinary clinic operations), each live on Vercel with a public site and a role-based admin console.",
         "My software foundation is complemented by a Computer Engineering degree (Cum Laude, Best Thesis Award) and Mechatronics training, reinforcing disciplined troubleshooting, system architecture, and performance-focused coding."
       ],
       metrics: [
         { value: "Dec 2023–2026", title: "Meijun LLC (Remote)", subtitle: "React, Node, PostgreSQL, AWS, Datadog" },
         { value: "Cum Laude", title: "BS Computer Eng.", subtitle: "STI College & Best Thesis Award" },
-        { value: "Dual Stack", title: "Production Runtimes", subtitle: "PERN Stack & PHP Laravel Ecosystems" },
+        { value: "4 Live Apps", title: "Personal Builds", subtitle: "Church, Telehealth, Transit & Vet Platforms" },
         { value: "packetHACKS", title: "2023 Hackathon", subtitle: "Finalist: Smart Utility (IoT Conference)" }
       ]
     };
@@ -164,6 +165,85 @@ class PortfolioModel {
           "Structured backend validation, access control, and database workflows in MySQL."
         ],
         hasCaseStudy: false
+      }
+    ];
+
+    this.liveProjects = [
+      {
+        id: "gospel-trend",
+        name: "Gospel Trend",
+        tagline: "Church Management & Ministry Operations Platform",
+        category: "Community / Faith",
+        icon: "church",
+        accent: "from-amber-500 to-yellow-600",
+        url: "https://web-admin-gt.vercel.app/",
+        summary: "A full-scale church platform that pairs a public congregation website with a member portal and a secured staff back office, covering livestreams, events, prayer, worship planning, and leadership records.",
+        features: [
+          "Member portal with announcements, events, livestream viewing, and a community prayer wall",
+          "Worship ministry tools for song libraries, service lineups, and team scheduling",
+          "Admin CMS for website pages, galleries, events, announcements, and inbound messages",
+          "Hardened staff auth: roles & permissions, MFA, session control, and account lockout",
+          "Audit logs with export, system health checks, error tracking, and backups",
+          "Google sign-in plus an OAuth2-secured, versioned REST API (v1)"
+        ],
+        tech: ["Laravel", "PHP", "React", "Inertia.js", "Laravel Passport", "Google OAuth", "REST API", "Vercel"]
+      },
+      {
+        id: "nuevacare",
+        name: "NuevaCare",
+        tagline: "Telemedicine & Virtual Clinic Platform",
+        category: "Healthcare / Telehealth",
+        icon: "stethoscope",
+        accent: "from-blue-500 to-cyan-500",
+        url: "https://verceltelemedicinesystem.vercel.app/app",
+        summary: "A telehealth platform connecting patients with on-call doctors through video consultations, e-prescriptions, and clinic booking, backed by a full operations console for clinics, doctors, and support staff.",
+        features: [
+          "\"Konsulta Now\" on-demand consults plus scheduled video and voice appointments",
+          "Doctor directory by specialty with credentialing and document review",
+          "E-prescriptions and medical documents with public verification codes",
+          "Clinic check-in queue with a live TV display for waiting rooms",
+          "Family profiles, subscription plans, coupons, and payments",
+          "Role-based admin, report builder, and audit logs; bilingual English / Filipino PWA"
+        ],
+        tech: ["React", "Vite", "JavaScript", "PWA", "RBAC", "Vercel"]
+      },
+      {
+        id: "five-star-bus",
+        name: "Five Star Bus",
+        tagline: "Online Bus Booking & Fleet Operations System",
+        category: "Transportation / Ticketing",
+        icon: "bus",
+        accent: "from-indigo-500 to-violet-600",
+        url: "https://busappointmentsystem.vercel.app/",
+        summary: "An end-to-end provincial bus ticketing system: passengers book trips, pick seats, and track their bus live, while terminal staff run counters, dispatch, boarding, and fleet maintenance from one console.",
+        features: [
+          "Online booking with interactive seat selection and e-tickets by reference code",
+          "Live bus tracking on an OpenStreetMap-based map",
+          "Ticket counter, paperless boarding manifests, and a departures TV board",
+          "Dispatch board, fleet maintenance work orders, and crew management",
+          "Parcel & cargo acceptance, bus charters, and cash remittance",
+          "CMS for routes, terminals, bus classes, and branding; report builder and audit logs"
+        ],
+        tech: ["React", "Vite", "JavaScript", "OpenStreetMap", "PWA", "RBAC", "Vercel"]
+      },
+      {
+        id: "24-seven-vet",
+        name: "24 | Seven Veterinary Clinic",
+        tagline: "Veterinary Clinic Management Suite",
+        category: "Healthcare / Veterinary",
+        icon: "paw-print",
+        accent: "from-emerald-500 to-teal-600",
+        url: "https://vercelveterinaryclinicsystem.vercel.app/",
+        summary: "A complete veterinary clinic system combining a public website and online booking with a multi-branch back office for medical records, procedures, billing, and inventory.",
+        features: [
+          "Online appointment booking with services, prices, and pet-care articles",
+          "Clients & pets registry with medical records, prescriptions, and vaccination cards",
+          "Vaccination & deworming tracking with automated follow-up reminders",
+          "Surgery consent, laboratory requests & results, confinement, and boarding",
+          "Grooming, home service & pet ambulance dispatch, and a live queue TV board",
+          "Billing & POS, inventory, multi-branch hours, report builder, and audit logs"
+        ],
+        tech: ["React", "Vite", "JavaScript", "RBAC", "Vercel"]
       }
     ];
 
@@ -383,6 +463,7 @@ class PortfolioView {
     this.renderSkills();
     this.renderExperience();
     this.renderProjects();
+    this.renderLiveProjects();
     this.renderArchitecture();
     this.renderEducation();
     this.renderReferences();
@@ -407,6 +488,7 @@ class PortfolioView {
       { name: "Skills", href: "#skills" },
       { name: "Experience", href: "#experience" },
       { name: "Projects", href: "#projects" },
+      { name: "Live Apps", href: "#live" },
       { name: "Architecture", href: "#architecture" },
       { name: "Education", href: "#education" },
       { name: "Contact", href: "#contact" }
@@ -416,7 +498,8 @@ class PortfolioView {
     const mobileNav = document.getElementById("mobile-menu");
 
     if (desktopNav) {
-      desktopNav.innerHTML = navLinks.map(link => `
+      // The logo already links home, so skip "Home" on desktop to keep the bar from overflowing
+      desktopNav.innerHTML = navLinks.filter(link => link.href !== "#home").map(link => `
         <a href="${link.href}" class="nav-link px-3 py-1.5 rounded-md text-sm font-medium text-slate-600 dark:text-gray-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-gray-800/60 transition-all duration-200 cursor-pointer relative group">
           <span>${link.name}</span>
           <span class="absolute bottom-0 left-3 right-3 h-[2px] bg-gradient-to-r from-indigo-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-center"></span>
@@ -611,6 +694,77 @@ class PortfolioView {
           </div>
         </div>
       </div>
+    `).join("");
+
+    this.init3DTilt();
+  }
+
+  renderLiveProjects() {
+    const container = document.getElementById("live-projects-grid");
+    if (!container) return;
+
+    container.innerHTML = this.model.liveProjects.map(proj => `
+      <article class="interactive-card rounded-2xl flex flex-col overflow-hidden group">
+        <div class="flex items-center gap-3 px-4 sm:px-5 py-2.5 bg-slate-100 dark:bg-[#090d18] border-b border-slate-200 dark:border-gray-800/80">
+          <div class="hidden sm:flex items-center gap-1.5 flex-shrink-0">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-400/80"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-yellow-400/80"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-green-400/80"></span>
+          </div>
+          <div class="flex-1 min-w-0 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 text-[10px] sm:text-[11px] font-mono text-slate-500 dark:text-gray-400">
+            <i data-lucide="lock" class="w-3 h-3 text-emerald-600 dark:text-emerald-400 flex-shrink-0"></i>
+            <span class="truncate">${new URL(proj.url).host}</span>
+          </div>
+          <span class="flex items-center gap-1.5 text-[10px] font-mono font-bold text-emerald-600 dark:text-emerald-400 flex-shrink-0">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            LIVE
+          </span>
+        </div>
+
+        <div class="p-5 sm:p-7 space-y-4 flex-grow">
+          <div class="flex items-start gap-4">
+            <div class="h-12 w-12 rounded-xl bg-gradient-to-br ${proj.accent} flex items-center justify-center text-white shadow-lg flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
+              <i data-lucide="${proj.icon}" class="w-6 h-6"></i>
+            </div>
+            <div class="min-w-0">
+              <span class="text-[11px] font-mono uppercase tracking-wider text-slate-500 dark:text-gray-400">${proj.category}</span>
+              <h4 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-200 transition-colors leading-tight">${proj.name}</h4>
+              <p class="text-xs sm:text-sm font-medium text-indigo-600 dark:text-indigo-300 mt-0.5">${proj.tagline}</p>
+            </div>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-gray-300 leading-relaxed">${proj.summary}</p>
+
+          <div class="space-y-2 pt-1">
+            <p class="text-xs font-mono text-slate-500 dark:text-gray-400 uppercase">Core Modules:</p>
+            <ul class="text-xs text-slate-600 dark:text-gray-300 space-y-1.5">
+              ${proj.features.map(f => `
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-px"></i>
+                  <span class="leading-relaxed">${f}</span>
+                </li>
+              `).join("")}
+            </ul>
+          </div>
+        </div>
+
+        <div class="px-5 sm:px-7 py-4 bg-slate-100 dark:bg-[#090d18] border-t border-slate-200 dark:border-gray-800/80 space-y-3">
+          <div class="flex flex-wrap gap-1.5">
+            ${proj.tech.map(t => `
+              <span class="text-[10px] sm:text-[11px] font-mono bg-white dark:bg-gray-800/70 border border-slate-300 dark:border-gray-700/50 text-slate-700 dark:text-gray-300 px-2 py-0.5 rounded shadow-2xs">
+                ${t}
+              </span>
+            `).join("")}
+          </div>
+          <a href="${proj.url}" target="_blank" rel="noopener noreferrer" class="w-full px-4 py-2.5 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-sm font-semibold transition-all duration-200 shadow-md shadow-indigo-600/30 flex items-center justify-center gap-2 cursor-pointer">
+            Launch Live App
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </article>
     `).join("");
 
     this.init3DTilt();

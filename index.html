@@ -6,7 +6,7 @@
   <title>Patrick Laurence J. Espeña — Full Stack Web Developer</title>
   <meta name="description" content="Portfolio of Patrick Laurence J. Espeña, Full Stack Web Developer specializing in React.js, Node.js, PostgreSQL, Laravel, and AWS cloud workflows." />
   <meta property="og:title" content="Patrick Laurence J. Espeña — Full Stack Web Developer" />
-  <meta property="og:description" content="Explore production web applications, PERN & Laravel stacks, AWS serverless pipelines, and Datadog observability systems." />
+  <meta property="og:description" content="Explore production web applications, four live full-stack platforms, PERN & Laravel stacks, AWS serverless pipelines, and Datadog observability systems." />
   <meta property="og:type" content="website" />
   <meta name="author" content="Patrick Laurence J. Espeña" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%236366f1'>PE</text></svg>" />
@@ -173,6 +173,13 @@
             <a href="#projects" class="nav-link w-full sm:w-auto text-center px-5 py-2.5 rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white text-sm font-semibold transition-all duration-200 shadow-lg shadow-indigo-600/30 cursor-pointer">
               View Production Work
             </a>
+            <a href="#live" class="nav-link w-full sm:w-auto px-5 py-2.5 rounded-lg border border-emerald-500/40 hover:border-emerald-500 bg-emerald-500/10 hover:bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 text-sm font-semibold transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-sm">
+              <span class="relative flex h-2 w-2 flex-shrink-0">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              Try My Live Apps
+            </a>
             <button id="open-resume-btn-hero" class="w-full sm:w-auto px-5 py-2.5 rounded-lg border border-slate-300 dark:border-gray-700 hover:border-indigo-500 bg-white dark:bg-gray-900/70 text-slate-800 dark:text-white text-sm font-semibold transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-sm">
               <i data-lucide="file-text" class="w-4 h-4 text-indigo-600 dark:text-indigo-400"></i>
               View / Download Resume
@@ -292,7 +299,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-8 sm:mb-12">
           <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">04. Selected Work</h2>
-          <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Featured Projects & Systems</h3>
+          <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Client Platforms & Professional Work</h3>
           <p class="text-slate-600 dark:text-gray-400 mt-2 text-sm sm:text-base">Core production applications and client platforms developed during professional roles.</p>
         </div>
 
@@ -300,11 +307,33 @@
       </div>
     </section>
 
-    <!-- 6. ARCHITECTURE SHOWCASE -->
-    <section id="architecture" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 bg-slate-100/50 dark:bg-[#080d17]/50 reveal-item">
+    <!-- 6. LIVE PERSONAL PROJECTS -->
+    <section id="live" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 bg-slate-100/50 dark:bg-[#080d17]/50 reveal-item">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-6">
+          <div class="max-w-3xl">
+            <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">05. Live Deployments</h2>
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Live Products, Built End to End</h3>
+            <p class="text-slate-600 dark:text-gray-400 mt-2 text-sm sm:text-base">Four full-scale platforms I independently designed, built, and deployed, each with a public-facing site and a role-based admin console. Open any of them and click around.</p>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-mono font-medium self-start md:self-auto flex-shrink-0">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            4 apps live on Vercel
+          </div>
+        </div>
+
+        <div id="live-projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"></div>
+      </div>
+    </section>
+
+    <!-- 7. ARCHITECTURE SHOWCASE -->
+    <section id="architecture" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 reveal-item">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-8 sm:mb-12">
-          <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">05. System Topology</h2>
+          <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">06. System Topology</h2>
           <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Full Stack Production Architecture Flow</h3>
           <p class="text-slate-600 dark:text-gray-400 mt-2 text-sm sm:text-base">Dynamic runtime topology visualizing automated signal transfer across system tiers.</p>
         </div>
@@ -321,11 +350,11 @@
       </div>
     </section>
 
-    <!-- 7. EDUCATION & HONORS -->
-    <section id="education" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 reveal-item">
+    <!-- 8. EDUCATION & HONORS -->
+    <section id="education" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 bg-slate-100/50 dark:bg-[#080d17]/50 reveal-item">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-8 sm:mb-12">
-          <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">06. Background</h2>
+          <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">07. Background</h2>
           <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Education & Honors</h3>
         </div>
 
@@ -333,10 +362,10 @@
       </div>
     </section>
 
-    <!-- 8. RESUME SECTION -->
-    <section id="resume" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 bg-slate-100/50 dark:bg-[#080d17]/50 text-center reveal-item">
+    <!-- 9. RESUME SECTION -->
+    <section id="resume" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 text-center reveal-item">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-        <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase">07. Curriculum Vitae</h2>
+        <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase">08. Curriculum Vitae</h2>
         <h3 class="text-2xl sm:text-4xl font-bold text-slate-900 dark:text-white">Interested in the full story?</h3>
         <p class="text-slate-600 dark:text-gray-300 max-w-xl mx-auto text-sm sm:text-base">
           Review verified details regarding software development, database engineering, cloud implementations, and contact references.
@@ -369,13 +398,13 @@
       </div>
     </section>
 
-    <!-- 9. CONTACT SECTION -->
-    <section id="contact" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 reveal-item">
+    <!-- 10. CONTACT SECTION -->
+    <section id="contact" class="scroll-mt-20 py-16 sm:py-20 border-b border-slate-200 dark:border-gray-800/60 bg-slate-100/50 dark:bg-[#080d17]/50 reveal-item">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
           <div class="lg:col-span-5 space-y-5 sm:space-y-6">
             <div>
-              <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">08. Inquiries</h2>
+              <h2 class="text-xs font-mono font-semibold text-indigo-600 dark:text-indigo-400 tracking-wider uppercase mb-2">09. Inquiries</h2>
               <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Let's Connect</h3>
             </div>
             <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
