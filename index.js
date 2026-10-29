@@ -195,7 +195,7 @@ class PortfolioModel {
         category: "Healthcare / Telehealth",
         icon: "stethoscope",
         accent: "from-blue-500 to-cyan-500",
-        url: "https://verceltelemedicinesystem.vercel.app/app",
+        url: "https://verceltelemedicinesystem.vercel.app",
         summary: "A telehealth platform connecting patients with on-call doctors through video consultations, e-prescriptions, and clinic booking, backed by a full operations console for clinics, doctors, and support staff.",
         features: [
           "\"Konsulta Now\" on-demand consults plus scheduled video and voice appointments",
